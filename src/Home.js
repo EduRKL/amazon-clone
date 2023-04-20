@@ -8,7 +8,7 @@ function Home() {
       <div className="home__container">
         <img 
         className='home__image'
-        src="https://store-images.s-microsoft.com/image/apps.16285.14618985536919905.552c0017-6644-49a8-8467-8f7b34ce0428.30ad6b05-16d9-4d5e-a242-43107708a16a" alt='Imagem'/>
+        src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" alt='Imagem'/>
       
       <div className="home__row">
       <Product 
