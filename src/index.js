@@ -1,16 +1,32 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './App.css';
+import Header from "./Header";
+import Home from "./Home";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Checkout from "./Checkout";
 import reportWebVitals from './reportWebVitals';
+import "./index.css"
 
 
+function App() {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
+    </>
+  );
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
 );
 
 
